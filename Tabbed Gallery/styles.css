@@ -1,1 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: rgb(0,57,97);
+    width: 100%;
+    height: 100vh;
+    background: url(img/bg1.jpeg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 600px;
+    width: 800px;
+    background: rgba(255,255,255,0.5);
+    border-radius: 30px;
+    border: 2px solid rgba(255,255,255, 0.5);
+    box-shadow: 0 0 30px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.tabs{
+    height: 60px;
+    margin: 50px 60px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 20px;
+}
+
+.tabs ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabs ul li{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.tabs ul li.active{
+    font-weight: 700;
+    height: 110%;
+    background: white;
+    border: 2px solid rgba(255,255,255,0.5);
+    box-shadow: 0 0 30px 5px rgba(0,0,0,0.1);
+}
+
+.images{
+    height: 390px;
+    margin: 50px 60px 0 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.images img{
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+}
+
+.images img.active{
+    opacity: 1;
+}
