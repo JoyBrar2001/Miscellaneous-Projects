@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.top-navbar{
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(0,0,0,0.6);
+    z-index: 100;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left h3{
+    color: white;
+    font-weight: 400;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    max-height: 140px;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%;
+}
+
+main{
+    position: relative;
+    padding: 2.2rem 0.8rem;
+}
+
+.profile-pic{
+    position: absolute;
+    left: 1rem;
+    top: 0;
+
+    transform: translateY(-50%);
+}
+
+.title{
+    font-size: 16px;
+    font-weight: 600;
+}
+.title span{
+    color: #682F0A;
+}
+
+.description{
+    font-size: 12px;
+    margin-top: 6px;
+}
+
+.stats-card{
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+    margin-top: 10px;
+
+    border-radius: 0.5rem;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.stats-card .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats-card .top p.next{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.stats-card .top p.points{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.progress-bar{
+    position: relative;
+    height: 8px;
+    width: 100%;
+    background: #C4C4C4;
+    border-radius: 4px;
+}
+
+.progress{
+    position: absolute;
+    width: 75%;
+    height: 8px;
+    background: #1569C7;
+    border-radius: 4px;
+}
+
+.stats-card .bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stats-card .bottom p.upcoming{
+    font-size: 14px;
+    font-weight: 500;
+    color: #1569C7;
+}
+
+.stats-card .bottom p.view-all{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.medals{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.details p{
+    font-size: 12px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+button.discussion{
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    
+    background: #1569C7;
+    color: white;
+    border-radius: 0.6rem;
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.post{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    border-radius: 0.5rem;
+}
+
+.post .post-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post .post-top .post-top-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.post .post-top .post-top-left img{
+    height: 40px;
+    width: 40px;
+}
+
+.post-details{
+    display: flex;
+    flex-direction: column;
+}
+
+.post-details h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.post-details p{
+    font-size: 12px;
+    color: #1569C7;
+}
+
+.post-details p span{
+    color: #A6A8A9;
+}
+
+.post-caption{
+    font-size: 12px;
+}
+
+.post-caption span{
+    color: #1569C7;
+}
+
+.post-image{
+    width: 100%;
+    height: 100%;
+}
+
+.post-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-bottom .left p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
